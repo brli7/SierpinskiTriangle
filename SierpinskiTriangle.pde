@@ -4,7 +4,7 @@ public void setup(){
 public void draw(){
   //sierpinski(10,510,500,50);
   background(192);
-  sierpinski(10,510,520-mouseY,Math.abs(mouseX));
+  sierpinski(10,510,520-mouseY,Math.abs(mouseX/2));
 }
 public void sierpinski(int x, int y, int len, int limit) {
   if(len <= limit) {
