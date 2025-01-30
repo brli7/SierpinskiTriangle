@@ -1,9 +1,16 @@
+int tall = 500;
+int size = 50;
+
 public void setup(){
   size(520,520);
 }
 public void draw(){
   background(192);
-  sierpinski(10,510,520-mouseY,Math.abs(mouseX/2));
+  sierpinski(10,510,tall,size);
+  if(mousePressed) {
+    tall = 520-mouseY;
+    size = Math.abs(mouseX/2);
+  }
 }
 public void sierpinski(int x, int y, int len, int limit) {
   if(len <= limit) {
