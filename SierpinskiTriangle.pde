@@ -8,12 +8,12 @@ public void draw(){
   background(192);
   sierpinski(260-(tall/2),510,tall,sizer);
   if(mousePressed) {
-    if(mouseX > 0 && mouseX < 520) {
+    //if(mouseX > 0 && mouseX < 520) {
       sizer = Math.abs((mouseX-260)/2);
-    }
-    if(mouseY > 0 && mouseY < 520) {
+    //}
+    //if(mouseY > 0 && mouseY < 520) {
       tall = 520-mouseY;
-    }
+    //}
   }
 }
 public void sierpinski(int x, int y, int len, int limit) {
