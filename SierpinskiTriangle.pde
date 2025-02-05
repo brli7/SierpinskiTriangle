@@ -2,7 +2,7 @@ int tall = 500;
 int sizer = 200;
 
 public void setup(){
-  sizer(520,520);
+  size(520,520);
 }
 public void draw(){
   background(192);
