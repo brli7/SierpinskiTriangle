@@ -1,3 +1,5 @@
+int tall = 500;
+int size = 200;
 
 public void setup(){
   size(520,520);
