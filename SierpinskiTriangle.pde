@@ -7,7 +7,7 @@ public void setup(){
 }
 public void draw(){
   background(192);
-  sierpinski(10,510,500,50); 
+  sierpinski(10,510,tall,size); 
   if(mousePressed) {
     tall = 520-mouseY;
     size = Math.abs(mouseX/2);
