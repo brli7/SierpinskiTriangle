@@ -1,15 +1,15 @@
 int tall = 500;
-int size = 200;
+int sizer = 200;
 
 public void setup(){
-  size(520,520);
+  sizer(520,520);
 }
 public void draw(){
   background(192);
-  sierpinski(260-(tall/2),510,tall,size);
+  sierpinski(260-(tall/2),510,tall,sizer);
   if(mousePressed) {
     if(mouseX > 0 && mouseX < 520) {
-      size = Math.abs((mouseX-260)/2);
+      sizer = Math.abs((mouseX-260)/2);
     }
     if(mouseY > 0 && mouseY < 520) {
       tall = 520-mouseY;
